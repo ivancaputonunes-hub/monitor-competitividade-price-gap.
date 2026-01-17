@@ -1,0 +1,17 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# data (não versionar dados)
+data/raw/*.csv
+data/processed/*
+outputs/*
+
+# env
+.env
+
+# os
+.DS_Store
