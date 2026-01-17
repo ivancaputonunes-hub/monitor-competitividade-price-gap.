@@ -15,3 +15,5 @@ outputs/*
 
 # os
 .DS_Store
+# Python packaging artifacts
+*.egg-info/
