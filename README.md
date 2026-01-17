@@ -21,7 +21,7 @@ Permite responder perguntas como:
 ## 📐 Arquitetura do Projeto
 
 Arquitetura pensada para separar **orquestração**, **lógica de negócio** e **dados**, seguindo boas práticas de engenharia de dados.
-monitor-competitividade-price-gap/
+```monitor-competitividade-price-gap/
 ├── data/
 │   ├── raw/            # Dados de entrada (preços próprios e concorrência)
 │   └── processed/      # Dados tratados (parquet)
@@ -36,7 +36,7 @@ monitor-competitividade-price-gap/
 │   └── io.py           # Leitura e escrita de dados
 ├── tests/              # Testes unitários
 ├── pyproject.toml      # Configuração do pacote Python
-└── README.md
+└── README.md```
 
 **Por que essa arquitetura**
 - Separação clara entre **orquestração** e **regras de negócio**
