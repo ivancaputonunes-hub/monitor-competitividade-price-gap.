@@ -36,7 +36,8 @@ Arquitetura pensada para separar **orquestração**, **lógica de negócio** e *
 │   └── io.py           # Leitura e escrita de dados
 ├── tests/              # Testes unitários
 ├── pyproject.toml      # Configuração do pacote Python
-└── README.md```
+└── README.md
+```
 
 **Por que essa arquitetura**
 - Separação clara entre **orquestração** e **regras de negócio**
