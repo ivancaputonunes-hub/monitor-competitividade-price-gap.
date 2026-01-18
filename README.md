@@ -62,3 +62,14 @@ Arquitetura pensada para separar **orquestração**, **lógica de negócio** e *
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+
+## 📊 Evidências do Projeto (Outputs Reais)
+
+Esta seção demonstra evidências reais de execução do pipeline e exemplos práticos de uso do output para tomada de decisão em pricing.
+
+
+
+
+
+
+
