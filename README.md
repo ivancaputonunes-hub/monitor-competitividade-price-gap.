@@ -65,10 +65,46 @@ source .venv/bin/activate
 
 ```
 
-## 📊 Evidências do Projeto (Outputs Reais)
+---
 
-Esta seção demonstra evidências reais de execução do pipeline e exemplos práticos de uso do output para tomada de decisão em pricing.
+## 📊 Exemplos de Outputs e Análises
 
+Esta seção demonstra, na prática, os outputs gerados pelo pipeline e como eles suportam decisões reais de pricing e competitividade.
+
+---
+
+### 🧾 Output final do pipeline (CSV processado)
+
+Arquivo gerado automaticamente pelo pipeline (`monitor_competitividade.csv`), contendo métricas de competitividade por SKU, loja e data.
+
+Principais campos:
+- `own_price`
+- `comp_price_mean`
+- `gap_pct_vs_mean`
+- `risk_label`
+
+Este arquivo é a base para análises exploratórias, dashboards e priorização de ações de pricing.
+
+![CSV Output Monitor](assets/screenshots/01_csv_output_monitor.png)
+
+---
+
+### 📈 Distribuição de GAP percentual vs mercado (Pivot)
+
+Análise agregada via tabela dinâmica, classificando SKUs conforme o **GAP percentual vs média da concorrência**:
+
+- **Entre -5% e +5%** → Zona neutra / alinhado ao mercado  
+- **Inferior a -5%** → Potencial perda de margem  
+- **Superior a +5%** → Alto risco competitivo  
+
+Essa visão permite:
+- Identificar rapidamente exposição competitiva
+- Priorizar revisões de preço com maior impacto
+- Apoiar decisões táticas de pricing por categoria
+
+![Distribuição de GAP Percentual](assets/screenshots/02_pivot_gap_distribution.png)
+
+---
 
 
 
