@@ -58,19 +58,14 @@ Arquitetura pensada para separar **orquestração**, **lógica de negócio** e *
 
 ## ⚙️ Como Executar o Projeto
 
-## Como executar o projeto
-
 Este projeto simula um pipeline de análise de competitividade e price gap com foco em apoiar decisões de pricing e RGM.
 
 ### Pré-requisitos
-
 - Python 3.11 ou superior
 - Git
 
 ### Instalação
-
 Clone o repositório e acesse a pasta do projeto:
-
 ```bash
 git clone https://github.com/ivancaputonunes-hub/monitor-competitividade-price-gap-py.git
 cd monitor-competitividade-price-gap-py
@@ -91,36 +86,33 @@ source .venv/bin/activate
 ```
 
 ### Instale as dependências:
-
 ```bash
 pip install -r requirements.txt
 ```
 
 ### Caso o projeto esteja configurado como pacote:
-
 ```bash
 pip install -e .
 ```
 
 ---
-
-### Execução rápida
-
-Para rodar o pipeline principal e gerar os outputs:
+### Gerar base de exemplo (opcional, recomendado para primeira execução)
+Gera um conjunto de dados sintético para simular cenário de negócio:
 ```bash
-python -m src.pipeline
+python scripts/generate_sample_data.py
 ```
 
-Ao final da execução, os arquivos processados serão gerados nas pastas configuradas de saída (ex.: data/processed e/ou outputs).
+---
 
-### Caso o comando acima não funcione
-Dependendo da estrutura, o entrypoint pode variar. Tente um dos comandos abaixo conforme o arquivo existente:
+### Quickstart (copiar e colar)
+Roda o pipeline e gera os artefatos finais:
 ```bash
-python src/pipeline.py
-python src/main.py
-python -m src
+python scripts/run_pipeline.py
 ```
-Se o projeto estiver configurado como CLI, consulte o arquivo pyproject.toml na seção project.scripts para identificar o comando correto.
+
+### Onde saem os arquivos
+	•	Dados tratados (parquet): data/processed/
+	•	Output final para consumo (CSV): outputs/monitor_competitividade.csv
 
 ---
 
