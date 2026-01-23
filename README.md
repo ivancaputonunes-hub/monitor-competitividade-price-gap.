@@ -1,11 +1,17 @@
 # 📊 Monitor de Competitividade e Price Gap
+Este projeto não busca definir preços ótimos, mas estruturar critérios claros para tomada de decisão em cenários reais de incerteza.
 
-Sistema analítico para **monitoramento competitivo de preços**, identificação de **price gaps**, **dispersões** e **riscos competitivos**, com foco em decisões de pricing no varejo.
+Logo, estruturei um sistema analítico para **monitoramento competitivo de preços**, identificação de **price gaps**, **dispersões** e **riscos competitivos**, com foco em decisões de pricing no varejo.
 
 O projeto simula um cenário real de negócio, comparando preços próprios vs. concorrência e gerando métricas acionáveis para apoio à tomada de decisão.
 
 ---
+### Para quem é este projeto?
+	•	Para profissionais de pricing, RGM e performance
+	•	Para contextos de varejo competitivo
+	•	Para apoio tático, não precificação automática
 
+---
 ## 🎯 Objetivo de Negócio
 
 Apoiar decisões reais de pricing, reduzindo risco competitivo e priorizando ações com impacto financeiro.
@@ -202,6 +208,7 @@ Principais campos:
 - `gap_pct_vs_mean`
 - `risk_label`
 
+Em um ambiente real, este output seria consumido por times de pricing, comercial ou BI como insumo para priorização de ações.
 Este arquivo é a base para análises exploratórias, dashboards e priorização de ações de pricing.
 
 ![CSV Output Monitor](assets/screenshots/01_csv_output_monitor.png)
