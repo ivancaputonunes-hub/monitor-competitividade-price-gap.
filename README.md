@@ -58,11 +58,77 @@ Arquitetura pensada para separar **orquestração**, **lógica de negócio** e *
 
 ## ⚙️ Como Executar o Projeto
 
-### 1️⃣ Criar e ativar ambiente virtual
+## Como executar o projeto
+
+Este projeto simula um pipeline de análise de competitividade e price gap com foco em apoiar decisões de pricing e RGM.
+
+### Pré-requisitos
+
+- Python 3.11 ou superior
+- Git
+
+### Instalação
+
+Clone o repositório e acesse a pasta do projeto:
+
 ```bash
-python3 -m venv .venv
+git clone https://github.com/ivancaputonunes-hub/monitor-competitividade-price-gap-py.git
+cd monitor-competitividade-price-gap-py
+
+```
+### Crie um ambiente virtual:
+```bash
+python -m venv .venv
+```
+
+### Ative o ambiente virtual:
+```bash
+# macOS / Linux
 source .venv/bin/activate
 
+# Windows (PowerShell)
+.\.venv\Scripts\Activate.ps1
+```
+
+### Instale as dependências:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Caso o projeto esteja configurado como pacote:
+
+```bash
+pip install -e .
+```
+
+---
+
+### Execução rápida
+
+Para rodar o pipeline principal e gerar os outputs:
+```bash
+python -m src.pipeline
+```
+
+Ao final da execução, os arquivos processados serão gerados nas pastas configuradas de saída (ex.: data/processed e/ou outputs).
+
+### Caso o comando acima não funcione
+Dependendo da estrutura, o entrypoint pode variar. Tente um dos comandos abaixo conforme o arquivo existente:
+```bash
+python src/pipeline.py
+python src/main.py
+python -m src
+```
+Se o projeto estiver configurado como CLI, consulte o arquivo pyproject.toml na seção project.scripts para identificar o comando correto.
+
+---
+
+### Testes
+
+Para executar os testes automatizados:
+```bash
+pytest -q
 ```
 
 ---
