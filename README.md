@@ -12,7 +12,7 @@ O projeto simula um cenário real de negócio, comparando preços próprios vs. 
 	•	Para apoio tático, não precificação automática
 
 ---
-## 🎯 Objetivo de Negócio
+### Objetivo de Negócio
 
 Apoiar decisões reais de pricing, reduzindo risco competitivo e priorizando ações com impacto financeiro.
 
@@ -24,7 +24,7 @@ Permite responder perguntas como:
 
 ---
 
-## 📐 Arquitetura do Projeto
+### Arquitetura do Projeto
 
 Arquitetura pensada para separar **orquestração**, **lógica de negócio** e **dados**, seguindo boas práticas de engenharia de dados.
 ```monitor-competitividade-price-gap/
@@ -53,7 +53,7 @@ Arquitetura pensada para separar **orquestração**, **lógica de negócio** e *
 
 ---
 
-## 🔄 Fluxo de Dados
+### Fluxo de Dados
 
 1. Dados brutos entram em `data/raw`
 2. Pipeline calcula métricas de competitividade e risco
@@ -62,7 +62,7 @@ Arquitetura pensada para separar **orquestração**, **lógica de negócio** e *
 
 ---
 
-## ⚙️ Como Executar o Projeto
+### Como Executar o Projeto
 
 Este projeto simula um pipeline de análise de competitividade e price gap com foco em apoiar decisões de pricing e RGM.
 
@@ -193,12 +193,12 @@ Decisão: investigar se há motivo (promo, estratégia, elasticidade). Se não h
 
 ---
 
-## 📊 Exemplos de Outputs e Análises
+### Exemplos de Outputs e Análises
 
 Esta seção demonstra, na prática, os outputs gerados pelo pipeline e como eles suportam decisões reais de pricing e competitividade.
 
 
-### 🧾 Output final do pipeline (CSV processado)
+### Output final do pipeline (CSV processado)
 
 Arquivo gerado automaticamente pelo pipeline (`monitor_competitividade.csv`), contendo métricas de competitividade por SKU, loja e data.
 
