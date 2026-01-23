@@ -122,6 +122,68 @@ Para executar os testes automatizados:
 ```bash
 pytest -q
 ```
+---
+### Decision Playbook (RGM)
+
+Este playbook traduz os outputs do monitor em ações táticas.
+
+### Regra 1 — Quando mexer no preço (reduzir)
+
+Mexer quando houver risco competitivo alto e gap acima do mercado.
+
+Critério prático:
+	•	gap_pct_vs_mean > +5%
+	•	risk_label = HIGH
+
+Ação:
+	•	Reduzir preço ou acionar mecanismo de proteção (ex.: ajuste tático por cluster/canal/categoria)
+
+### Regra 2 — Quando segurar
+
+Segurar quando estiver alinhado ao mercado e o risco estiver controlado.
+
+Critério prático:
+	•	gap_pct_vs_mean entre -5% e +5%
+	•	risk_label = LOW ou MEDIUM
+
+Ação:
+	•	Manter preço e monitorar (sem mexer por ansiedade)
+
+### Regra 3 — Quando investigar antes de agir
+
+Investigar quando o gap for negativo (abaixo do mercado), porque pode ser perda de margem sem necessidade.
+
+Critério prático:
+	•	gap_pct_vs_mean < -5%
+
+Ação:
+	•	Validar competitividade real (cesta, elasticidade, promo, ruptura)
+	•	Se não houver justificativa, corrigir para recuperar margem
+
+### Exemplos (com números do output)
+
+Exemplo A — Alto risco competitivo (ação imediata)
+	•	own_price: 10.49
+	•	comp_price_mean: 9.79
+	•	gap_pct_vs_mean: +7.1%
+	•	risk_label: HIGH
+Decisão: priorizar revisão de preço (ou proteção por cluster) e acompanhar impacto.
+
+Exemplo B — Potencial perda de margem (investigar)
+	•	own_price: 8.99
+	•	comp_price_mean: 9.79
+	•	gap_pct_vs_mean: -8.2%
+	•	risk_label: LOW/MEDIUM
+Decisão: investigar se há motivo (promo, estratégia, elasticidade). Se não houver, corrigir para recuperar margem.
+
+---
+
+### Premissas e limitações
+	•	Concorrência é tratada como comparável (não considera diferenças finas de canal/serviço/experiência)
+	•	Gap é calculado de forma estática (não modela elasticidade-preço)
+	•	Não incorpora efeito de promoções, ruptura e substitutos de forma explícita
+	•	Dispersão captura variabilidade de preço, mas não explica causalidade (ex.: guerra de preços local)
+
 
 ---
 
