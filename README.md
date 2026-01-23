@@ -191,7 +191,6 @@ Decisão: investigar se há motivo (promo, estratégia, elasticidade). Se não h
 
 Esta seção demonstra, na prática, os outputs gerados pelo pipeline e como eles suportam decisões reais de pricing e competitividade.
 
----
 
 ### 🧾 Output final do pipeline (CSV processado)
 
@@ -207,7 +206,6 @@ Este arquivo é a base para análises exploratórias, dashboards e priorização
 
 ![CSV Output Monitor](assets/screenshots/01_csv_output_monitor.png)
 
----
 
 ### 📈 Distribuição de GAP percentual vs mercado (Pivot)
 
