@@ -129,8 +129,7 @@ Para executar os testes automatizados:
 pytest -q
 ```
 
-```
-```
+
 ---
 ## Decision Playbook (RGM)
 
