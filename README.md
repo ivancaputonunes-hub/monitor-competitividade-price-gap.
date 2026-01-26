@@ -214,7 +214,7 @@ Este arquivo é a base para análises exploratórias, dashboards e priorização
 ![CSV Output Monitor](assets/screenshots/01_csv_output_monitor.png)
 
 
-### 📈 Distribuição de GAP percentual vs mercado (Pivot)
+### Distribuição de GAP percentual vs mercado (Pivot)
 
 Análise agregada via tabela dinâmica, classificando SKUs conforme o **GAP percentual vs média da concorrência**:
 
