@@ -128,6 +128,9 @@ Para executar os testes automatizados:
 ```bash
 pytest -q
 ```
+
+```
+```
 ---
 ## Decision Playbook (RGM)
 
