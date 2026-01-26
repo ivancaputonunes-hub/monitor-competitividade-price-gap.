@@ -129,7 +129,7 @@ Para executar os testes automatizados:
 pytest -q
 ```
 ---
-### Decision Playbook (RGM)
+## Decision Playbook (RGM)
 
 Este playbook traduz os outputs do monitor em ações táticas.
 
