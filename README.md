@@ -1,4 +1,4 @@
-# 📊 Monitor de Competitividade e Price Gap
+# Monitor de Competitividade e Price Gap
 Este projeto não busca definir preços ótimos, mas estruturar critérios claros para tomada de decisão em cenários reais de incerteza.
 
 Logo, estruturei um sistema analítico para **monitoramento competitivo de preços**, identificação de **price gaps**, **dispersões** e **riscos competitivos**, com foco em decisões de pricing no varejo.
