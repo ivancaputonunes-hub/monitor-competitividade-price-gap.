@@ -62,7 +62,7 @@ Arquitetura pensada para separar **orquestração**, **lógica de negócio** e *
 
 ---
 
-### Como Executar o Projeto
+## Como Executar o Projeto
 
 Este projeto simula um pipeline de análise de competitividade e price gap com foco em apoiar decisões de pricing e RGM.
 
